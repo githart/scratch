@@ -19,17 +19,15 @@ some needed CMake scripts are included in lib, but others in lib/compat are
 provided if you are trying to build with an old version of CMake (although the
 best option is to get the latest CMake if possible).
 
-Term
-: Definition
+###### boost  
+             -- a C++ utilities package -  
+                http://www.boost.org/  
+                Debian/Ubuntu package libboost-dev
 
-boost       
-:           -- a C++ utilities package -  
-:              http://www.boost.org/  
-:              Debian/Ubuntu package libboost-dev
-
-cmake     -- a build management tool  
-:              http://www.cmake.org/  
-:              Debian/Ubuntu package cmake
+###### cmake  
+             -- a build management tool  
+                http://www.cmake.org/  
+                Debian/Ubuntu package cmake
 
 cxxtest     -- a test framework
                http://cxxtest.sourceforge.net/
