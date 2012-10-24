@@ -20,15 +20,15 @@ provided if you are trying to build with an old version of CMake (although the
 best option is to get the latest CMake if possible).
 
 ###### boost  
-> C++ utilities package -  
+> C++ utilities package
 > http://www.boost.org/ | libboost-dev 
 
 ###### cmake  
-> build management tool  
+> Build management tool  
 > http://www.cmake.org/ | cmake
 
 ###### cxxtest     
-> test framework  
+> Test framework  
 > http://cxxtest.sourceforge.net/ | https://launchpad.net/~opencog-dev/+archive/ppa
 
 ###### guile       
@@ -52,36 +52,36 @@ the build, will be more precise as to which parts will not be built.
 > http://curl.haxx.se/ | libcurl4-gnutls-dev
 
 ###### expat       
-> an XML parsing library -   
+> an XML parsing library
 > Used by Embodiment subsystem  
 > http://expat.sourceforge.net/
 > http://www.jclark.com/xml/expat.html (version 1.2) | libexpat1-dev or libxmltok1-dev 
 
 ###### HyperTable  
-> Distributed storage.  
-> http://hypertable.org.  
+> Distributed storage   
+> http://hypertable.org   
 > This requires SIGAR as well. 
 
 ###### MPI         
 > Message Passing Interface  
-> Required for compute-cluster version of MOSES.  
+> Required for compute-cluster version of MOSES   
 > Use either MPICHV2 or OpenMPI
 
 ###### OpenGL      
 > Open Graphics Library  
-> Required by opencog/spatial/MapTool  
-> info: http://www.opengl.org  
+> Used by opencog/spatial/MapTool  
+> http://www.opengl.org  
 > Commonly provided with your video card driver
 
 ###### SDL         
 > Simple DirectMedia Layer  
-> Required by opencog/spatial/MapTool  
+> Used by opencog/spatial/MapTool  
 > http://www.libsdl.org  
 > Debian/Ubuntu package libsdl1.2-dev
 
 ###### SDL_gfx     
 > Simple DirectMedia Layer extension  
-> Required by opencog/spatial/MapTool  
+> Used by opencog/spatial/MapTool  
 > http://www.ferzkopp.net/joomla/content/view/19/14/ | libsdl-gfx1.2-dev
 
 ###### unixODBC    
@@ -92,7 +92,7 @@ the build, will be more precise as to which parts will not be built.
 ###### xercesc     
 > Apache Xerces-C++ XML Parser  
 > Requied for embodiment  
-> Debian/Ubuntu packages libxerces-c28 and libxerces-c2-dev
+> http://xerces.apache.org/xerces-c/ | libxerces-c2-dev
  
 ###### xmlrpc      
 > XML-RPC support  
@@ -104,11 +104,11 @@ Building OpenCog
 ----------------
 Peform the following steps at the shell prompt:
 
-   cd to project root dir
-   mkdir bin
-   cd bin
-   cmake -DCMAKE_BUILD_TYPE=Release ..
-   make
+    cd to project root dir
+    mkdir bin
+    cd bin
+    cmake -DCMAKE_BUILD_TYPE=Release ..
+    make
 
 Libraries will be built into subdirectories within bin, mirroring the
 structure of the source directory root. The flag -DCMAKE_BUILD_TYPE=Release
@@ -121,7 +121,7 @@ Unit tests
 To build and run the unit tests, from the ./bin directory enter (after
 building opencog as above): 
 
-   make test
+    make test
 
 
 Running the server
