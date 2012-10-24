@@ -28,16 +28,16 @@ best option is to get the latest CMake if possible).
 > http://www.cmake.org/ | cmake
 
 ###### cxxtest     
-> test framework
+> test framework  
 > http://cxxtest.sourceforge.net/ | https://launchpad.net/~opencog-dev/+archive/ppa
 
 ###### guile       
-> Embedded scheme interperter
-> Version 1.8.6 or newer is required.
+> Embedded scheme interperter  
+> Version 1.8.6 or newer is required.  
 > http://www.gnu.org/software/guile/guile.html | guile-1.8-dev
 
 ###### libgsl      
-> The GNU Scientific Library
+> The GNU Scientific Library  
 > http://www.gnu.org/software/gsl/ | libgsl0-dev
 
 Optional Prerequisites
@@ -47,60 +47,57 @@ optional parts of OpenCog will not be built.  The CMake command, during
 the build, will be more precise as to which parts will not be built.
 
 ###### curl        
-> cURL groks URLs
-> Used by opencog/ubigraph
+> cURL groks URLs  
+> Used by opencog/ubigraph  
 > http://curl.haxx.se/ | libcurl4-gnutls-dev
 
 ###### expat       
-> an XML parsing library - 
-> Used by Embodiment subsystem
+> an XML parsing library -   
+> Used by Embodiment subsystem  
 > http://expat.sourceforge.net/
 > http://www.jclark.com/xml/expat.html (version 1.2) | libexpat1-dev or libxmltok1-dev 
 
 ###### HyperTable  
-> Distributed storage.
-> http://hypertable.org.
+> Distributed storage.  
+> http://hypertable.org.  
 > This requires SIGAR as well. 
 
 ###### MPI         
-> Message Passing Interface
-> Required for compute-cluster version of MOSES.
+> Message Passing Interface  
+> Required for compute-cluster version of MOSES.  
 > Use either MPICHV2 or OpenMPI
 
 ###### OpenGL      
-> Open Graphics Library
-> Required by opencog/spatial/MapTool
-> info: http://www.opengl.org
+> Open Graphics Library  
+> Required by opencog/spatial/MapTool  
+> info: http://www.opengl.org  
 > Commonly provided with your video card driver
 
 ###### SDL         
-> Simple DirectMedia Layer
-> Required by opencog/spatial/MapTool
-> http://www.libsdl.org
+> Simple DirectMedia Layer  
+> Required by opencog/spatial/MapTool  
+> http://www.libsdl.org  
 > Debian/Ubuntu package libsdl1.2-dev
 
 ###### SDL_gfx     
-> Simple DirectMedia Layer extension
-> Required by opencog/spatial/MapTool
-> http://www.ferzkopp.net/joomla/content/view/19/14/
-> Debian/Ubuntu package libsdl-gfx1.2-dev
+> Simple DirectMedia Layer extension  
+> Required by opencog/spatial/MapTool  
+> http://www.ferzkopp.net/joomla/content/view/19/14/ | libsdl-gfx1.2-dev
 
 ###### unixODBC    
-> Generic SQL Database client access libraries
-> Required for the distributed-processing atomspace.
-> http://www.unixodbc.org/
-> Debian/Ubuntu packages unixodbc-dev
+> Generic SQL Database client access libraries  
+> Required for the distributed-processing atomspace.  
+> http://www.unixodbc.org/ | unixodbc-dev
 
 ###### xercesc     
-> Apache Xerces-C++ XML Parser
-> Requied for embodiment
+> Apache Xerces-C++ XML Parser  
+> Requied for embodiment  
 > Debian/Ubuntu packages libxerces-c28 and libxerces-c2-dev
  
 ###### xmlrpc      
-> XML-RPC support
-> Required by opencog/ubigraph
-> http://www.xmlrpc.com
-> Debian/Ubuntu package libxmlrpc-c-dev
+> XML-RPC support  
+> Required by opencog/ubigraph  
+> http://www.xmlrpc.com | libxmlrpc-c-dev
 
 
 Building OpenCog
