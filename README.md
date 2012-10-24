@@ -20,96 +20,91 @@ provided if you are trying to build with an old version of CMake (although the
 best option is to get the latest CMake if possible).
 
 ###### boost  
-> -- a C++ utilities package -  
-> http://www.boost.org/  
-> Debian/Ubuntu package libboost-dev
+> C++ utilities package -  
+> http://www.boost.org/ | libboost-dev 
 
 ###### cmake  
-> -- a build management tool  
-> http://www.cmake.org/  
-> Debian/Ubuntu package cmake
+> build management tool  
+> http://www.cmake.org/ | cmake
 
-cxxtest     -- a test framework
-               http://cxxtest.sourceforge.net/
-               (Not originally available in Debian/Ubuntu; get cxxtest 
-               from https://launchpad.net/~dhart/+archive/ppa)
+###### cxxtest     
+> test framework
+> http://cxxtest.sourceforge.net/ | https://launchpad.net/~opencog-dev/+archive/ppa
 
-guile       -- Embedded scheme interperter
-               http://www.gnu.org/software/guile/guile.html
-               Version 1.8.6 or newer is required.
-               Debian/Ubuntu package guile-1.8-dev
+###### guile       
+> Embedded scheme interperter
+> Version 1.8.6 or newer is required.
+> http://www.gnu.org/software/guile/guile.html | guile-1.8-dev
 
-libgsl      -- The GNU Scientific Library
-               Debian/Ubuntu package libgsl0-dev
+###### libgsl      
+> The GNU Scientific Library
+> http://www.gnu.org/software/gsl/ | libgsl0-dev
 
-Optional prereqs
-----------------
+Optional Prerequisites
+----------------------
 The following packages are optional. If they are not installed, some
 optional parts of OpenCog will not be built.  The CMake command, during
 the build, will be more precise as to which parts will not be built.
 
-curl        -- cURL groks URLs
-               Optional package
-               Required by opencog/ubigraph
-               http://curl.haxx.se/
-               Debian/Ubuntu package libcurl4-gnutls-dev
+###### curl        
+> cURL groks URLs
+> Used by opencog/ubigraph
+> http://curl.haxx.se/ | libcurl4-gnutls-dev
 
-expat       -- an XML parsing library - 
-               Optional package, needed for embodiment support.
-               http://www.jclark.com/xml/expat.html (version 1.2)
-               Debian/Ubuntu package libexpat1-dev
-               Alternatively Debian/Ubuntu package libxmltok1-dev 
-               (supplies expat v1.2) Version 2 seems to work as well.  
-               http://expat.sourceforge.net/
+###### expat       
+> an XML parsing library - 
+> Used by Embodiment subsystem
+> http://expat.sourceforge.net/
+> http://www.jclark.com/xml/expat.html (version 1.2) | libexpat1-dev or libxmltok1-dev 
 
-HyperTable  -- Distributed storage.
-               Optional package, needed only for experimental support.
-               http://hypertable.org.
-               This requires SIGAR as well. 
+###### HyperTable  
+> Distributed storage.
+> http://hypertable.org.
+> This requires SIGAR as well. 
 
-MPI         -- Message Passing Interface
-               Optional package
-               Required for compute-cluster version of MOSES.
-               Use either MPICHV2 or OpenMPI
+###### MPI         
+> Message Passing Interface
+> Required for compute-cluster version of MOSES.
+> Use either MPICHV2 or OpenMPI
 
-OpenGL      -- Open Graphics Library
-               Optional package
-               Required by opencog/spatial/MapTool
-               info: http://www.opengl.org
-               Commonly provided with your video card driver
+###### OpenGL      
+> Open Graphics Library
+> Required by opencog/spatial/MapTool
+> info: http://www.opengl.org
+> Commonly provided with your video card driver
 
-SDL         -- Simple DirectMedia Layer
-               Optional package
-               Required by opencog/spatial/MapTool
-               http://www.libsdl.org
-               Debian/Ubuntu package libsdl1.2-dev
+###### SDL         
+> Simple DirectMedia Layer
+> Required by opencog/spatial/MapTool
+> http://www.libsdl.org
+> Debian/Ubuntu package libsdl1.2-dev
 
-SDL_gfx     -- Simple DirectMedia Layer extension
-               Optional package
-               Required by opencog/spatial/MapTool
-               http://www.ferzkopp.net/joomla/content/view/19/14/
-               Debian/Ubuntu package libsdl-gfx1.2-dev
+###### SDL_gfx     
+> Simple DirectMedia Layer extension
+> Required by opencog/spatial/MapTool
+> http://www.ferzkopp.net/joomla/content/view/19/14/
+> Debian/Ubuntu package libsdl-gfx1.2-dev
 
-unixODBC    -- Generic SQL Database client access libraries
-               Optional package
-               Required for the distributed-processing atomspace.
-               http://www.unixodbc.org/
-               Debian/Ubuntu packages unixodbc-dev
+###### unixODBC    
+> Generic SQL Database client access libraries
+> Required for the distributed-processing atomspace.
+> http://www.unixodbc.org/
+> Debian/Ubuntu packages unixodbc-dev
 
-xercesc     -- Apache Xerces-C++ XML Parser
-               Optional package
-               Requied for embodiment
-               Debian/Ubuntu packages libxerces-c28 and libxerces-c2-dev
+###### xercesc     
+> Apache Xerces-C++ XML Parser
+> Requied for embodiment
+> Debian/Ubuntu packages libxerces-c28 and libxerces-c2-dev
  
-xmlrpc      -- XML-RPC support
-               Optional package
-               Required by opencog/ubigraph
-               http://www.xmlrpc.com
-               Debian/Ubuntu package libxmlrpc-c-dev
+###### xmlrpc      
+> XML-RPC support
+> Required by opencog/ubigraph
+> http://www.xmlrpc.com
+> Debian/Ubuntu package libxmlrpc-c-dev
 
 
-To build opencog:
------------------
+Building OpenCog
+----------------
 Peform the following steps at the shell prompt:
 
    cd to project root dir
@@ -124,16 +119,16 @@ results in binaries that are optimized for for performance; ommitting
 this flag will result in faster builds, but slower executables.
 
 
-Unit tests:
------------
+Unit tests
+----------
 To build and run the unit tests, from the ./bin directory enter (after
 building opencog as above): 
 
    make test
 
 
-Running the server:
--------------------
+Running the server
+------------------
 The cogserver provides a simple server interface to the reasoning
 system.
 
