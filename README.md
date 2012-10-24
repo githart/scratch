@@ -1,6 +1,6 @@
 
-                          OpenCog
-                          =======
+OpenCog
+=======
 
 OpenCog is a framework for developing AI systems, especially appropriate
 for integrative multi-algorithm systems, and artificial general intelligence
@@ -19,14 +19,16 @@ some needed CMake scripts are included in lib, but others in lib/compat are
 provided if you are trying to build with an old version of CMake (although the
 best option is to get the latest CMake if possible).
 
-* boost       
+boost       
 :           -- a C++ utilities package -  
 :              http://www.boost.org/  
 :              Debian/Ubuntu package libboost-dev
-* cmake     -- a build management tool  
+
+cmake     -- a build management tool  
 :              http://www.cmake.org/  
 :              Debian/Ubuntu package cmake
-* cxxtest     -- a test framework
+
+cxxtest     -- a test framework
                http://cxxtest.sourceforge.net/
                (Not originally available in Debian/Ubuntu; get cxxtest 
                from https://launchpad.net/~dhart/+archive/ppa)
