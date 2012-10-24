@@ -20,7 +20,7 @@ provided if you are trying to build with an old version of CMake (although the
 best option is to get the latest CMake if possible).
 
 ###### boost  
-> C++ utilities package
+> C++ utilities package  
 > http://www.boost.org/ | libboost-dev 
 
 ###### cmake  
@@ -32,8 +32,7 @@ best option is to get the latest CMake if possible).
 > http://cxxtest.sourceforge.net/ | https://launchpad.net/~opencog-dev/+archive/ppa
 
 ###### guile       
-> Embedded scheme interperter  
-> Version 1.8.6 or newer is required.  
+> Embedded scheme interperter (version 1.8.6 or newer is required)  
 > http://www.gnu.org/software/guile/guile.html | guile-1.8-dev
 
 ###### libgsl      
@@ -52,15 +51,14 @@ the build, will be more precise as to which parts will not be built.
 > http://curl.haxx.se/ | libcurl4-gnutls-dev
 
 ###### expat       
-> an XML parsing library
+> an XML parsing library  
 > Used by Embodiment subsystem  
-> http://expat.sourceforge.net/
-> http://www.jclark.com/xml/expat.html (version 1.2) | libexpat1-dev or libxmltok1-dev 
+> http://expat.sourceforge.net/ | http://www.jclark.com/xml/expat.html (version 1.2) | libexpat1-dev  
 
 ###### HyperTable  
 > Distributed storage   
 > http://hypertable.org   
-> This requires SIGAR as well. 
+> This requires SIGAR as well
 
 ###### MPI         
 > Message Passing Interface  
@@ -76,8 +74,7 @@ the build, will be more precise as to which parts will not be built.
 ###### SDL         
 > Simple DirectMedia Layer  
 > Used by opencog/spatial/MapTool  
-> http://www.libsdl.org  
-> Debian/Ubuntu package libsdl1.2-dev
+> http://www.libsdl.org | libsdl1.2-dev
 
 ###### SDL_gfx     
 > Simple DirectMedia Layer extension  
