@@ -9,8 +9,8 @@ it currently contains a functional core framework, and a number of
 cognitive agents at varying levels of completion, some already displaying
 interesting and useful functionalities alone and in combination.
 
-Prerequisites:
---------------
+Prerequisites
+-------------
 To build and run OpenCog, the following packages are required. With a
 few exceptions, most Linux distributions will have these packages.
 
@@ -18,6 +18,9 @@ Older versions of CMake may not have scripts to find all of these packages,
 some needed CMake scripts are included in lib, but others in lib/compat are
 provided if you are trying to build with an old version of CMake (although the
 best option is to get the latest CMake if possible).
+
+Term
+: Definition
 
 boost       
 :           -- a C++ utilities package -  
